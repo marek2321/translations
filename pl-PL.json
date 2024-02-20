@@ -1,0 +1,561 @@
+{
+  "countdown": {
+    "days": "dni",
+    "hours": "godzin",
+    "minutes": "minut"
+  },
+  "status": {
+    "pending": "Oczekuję na weryfikację",
+    "accepted": "Zatwierdzone",
+    "rejected": "Odrzucone"
+  },
+  "no_data": "Brak danych",
+  "percentage_grow": "(+{{percentageDifference}}%)",
+  "percentage_loss": "({{percentageDifference}}%)",
+  "social_media_links": {
+    "youtubeLink": "YouTube",
+    "facebookLink": "Facebook",
+    "spotifyLink": "Spotify",
+    "instagramLink": "Instagram"
+  },
+  "social_media": {
+    "youtube": "YouTube",
+    "facebook": "Facebook",
+    "spotify": "Spotify",
+    "instagram": "Instagram",
+    "googleCalendar": "Google Kalendarz",
+    "googleMail": "Google Mail",
+    "tiktok": "TikTok",
+    "twitter": "Twitter/X"
+  },
+  "yes": "Tak",
+  "no": "Nie",
+  "save": "Zapisz",
+  "or": "lub",
+  "next": "Dalej",
+  "skip": "Pomiń",
+  "show": "Pokaż",
+  "new": "Nowy",
+  "hide": "Ukryj",
+  "change": "Zmień",
+  "send": "Wyślij",
+  "remove": "Usuń",
+  "title": "ADM",
+  "cancel": "Anuluj",
+  "form_has_errors": "Formularz zawiera błędy!",
+  "auth": {
+    "labels": {
+      "account_type": "Typ konta",
+      "email": "E-mail",
+      "password": "Hasło",
+      "repeat_password": "Powtórz nowe hasło"
+    },
+    "placeholders": {
+      "email": "Wprowadź adres e-mail",
+      "password": "Wprowadź hasło",
+      "repeat_password": "Wprowadź hasło"
+    },
+    "regulations": "Zapoznałem się z <a href=\"{{ regulations }} \" target=\"_blank\">regulaminem</a> i <a href=\"{{ privacyPolicy }}\" target=\"_blank\">polityką prywatności</a> oraz akceptuję założenie konta w systemie ADM na podany adres e-mail",
+    "create_account": "Załóż konto",
+    "register_helptext": "Nie masz jeszcze konta?",
+    "register": "Zarejestruj się",
+    "sign_in_helptext": "Masz już konto?",
+    "sign_in": "Zaloguj się",
+    "remind_password": "Przypomnij hasło",
+    "reset_password": "Resetuj hasło",
+    "remember_password": "Znasz hasło?",
+    "change_password": "Zmień hasło"
+  },
+  "profile_setup": {
+    "welcome": {
+      "text1": "Żeby w pełni korzystać z funkcji ADM musimy zweryfikować Twoje konto. Żebyśmy mogli to zrobić, musisz uzupełnić swój profil.",
+      "text2": "Możesz to zrobić później, kiedy zapoznasz się z naszymi możliwościami.",
+      "text3": "Decyzja należy do Ciebie :)"
+    },
+    "complete_setup": "Uzupełniam",
+    "complete_profile": "Uzupełnij swój profil",
+    "verify_profile": "Zweryfikuj swój profil",
+    "welcome_msg": "Witamy w ADM",
+    "form": {
+      "title": "Twoje dane",
+      "upload_image": "Wgraj zdjęcie",
+      "upload_info": "Zdjęcia w formacie JPG, PNG w proporcji 1:1",
+      "labels": {
+        "avatar": "Awatar",
+        "first_name": "Imię",
+        "last_name": "Nazwisko",
+        "pseudonym": "Pseudonim",
+        "phone_number": "Numer kontaktowy",
+        "nip": "Nip"
+      },
+      "placeholders": {
+        "first_name": "Wprowadź imię",
+        "last_name": "Wprowadź nazwisko",
+        "pseudonym": "Wprowadź pseudonim",
+        "phone_number": "Wprowadź numer kontaktowy",
+        "nip": "Wprowadź NIP"
+      },
+      "helptext": {
+        "phone_number": "9 cyfr, bez spacji i znaków specjalnych",
+        "nip": "10 cyfr, bez spacji i znaków specjalnych"
+      }
+    },
+    "socials": {
+      "title": "Social media",
+      "social_link": "Wprowadź adres url"
+    }
+  },
+  "account_type": {
+    "artist": "Artysta",
+    "manager": "Manager"
+  },
+  "forms": {
+    "error": {
+      "message": {
+        "date_range": "Zakres dat jest nieprawidłowy",
+        "required": "To pole jest wymagane",
+        "postal_code": "Niepoprawny kod pocztowy",
+        "invalid_address": "Podaj nazwę miejscowości, ulicy oraz numer domu",
+        "invalid_street": "Podaj nazwę ulicy oraz numer domu",
+        "invalid_street_number": "Podaj numer domu",
+        "new_password": "Nowe hasło musi być takie samo w obu polach",
+        "max_length": "Przekroczono maksymalną ilość znaków",
+        "min_length": "Minimalna ilość znaków: {{min_length}}",
+        "max": "Maksymalna wartość: {{max}}",
+        "invalid_url": "Niepoprawny adres url",
+        "general": "Niepoprawna wartość pola",
+        "at-least-upper": "Minimalna ilość dużych liter: {{required_length}}",
+        "at-least-lower": "Minimalna ilość małych liter: {{required_length}}",
+        "at-least-numbers": "Minimalna ilość cyfr: {{required_length}}",
+        "at-least-symbols": "Minimalna ilość znaków specjalnych: {{required_length}}\nDozwolone symbole: #?!@$%^&*-",
+        "words": "Pole powinno zawierać tylko litery",
+        "at_least_one_capital": "Pole powinno zawierać wielką literę",
+        "at_least_one_lower": "Pole powinno zawierać małą literę",
+        "at_least_one_number": "Pole powinno zawierać cyfrę",
+        "at_least_one_symbol": "Pole powinno zawierać symbol - #?!@$%^&*-",
+        "at_least_one_required": "Przynajmniej jedno pole musi być wypełnione"
+      }
+    }
+  },
+  "distribution": {
+    "steps": {
+      "first": "Informacje i materiały",
+      "second": "Podsumowanie i płatność"
+    },
+    "save_draft": {
+      "title": "Jesteś pewny?",
+      "content": "Zamierzasz opuścić formularz, chcesz zapisać dane w formularzu na później?"
+    },
+    "title": "Dystrybucja",
+    "single": "Singiel",
+    "sign_annex": "Aby skorzystać z pełnych możliwości tego panelu, podpisz cyfrowo aneks",
+    "subpages": {
+      "digital": "Digital",
+      "physical": "Wydanie fizyczne",
+      "catalog": "Katalog"
+    },
+    "buttons": {
+      "digital_description": "Zaplanuj premierę singla",
+      "physical_description": "Wydaj album CD/Vinyl",
+      "catalog_description": "Zobacz katalog"
+    },
+    "planning": {
+      "sign_contract_info": "Aby złożyć zamówienie potrzebne jest podpisanie umowy z ADM",
+      "sign_contract": "Podpisz umowę",
+      "distribution": "Dystrybucja",
+      "digital": "Digital",
+      "title": "Zaplanuj premierę singla",
+      "desktop_first": "Informacje i materiały",
+      "desktop_second": "Podsumowanie",
+      "step_basic_info": "Informacje podstawowe",
+      "step_additional_info": "Informacje dodatkowe",
+      "step_assets": "Materiały",
+      "step_summary": "Podsumowanie",
+      "form": {
+        "labels": {
+          "author": "Wykonawca/wykonawcy nagrania",
+          "title": "Tytuł nagrania",
+          "description": "Opis",
+          "producer": "Producent",
+          "producer_details": "Producent (imię i nazwisko)",
+          "lyrics_author": "Autorzy tekstu (imię i nazwisko)",
+          "label": "Wytwórnia",
+          "release_year": "Rok wydania",
+          "publication_date": "Data publikacji",
+          "tiktok_fragment": "Start fragmentu TikTok",
+          "swear_words": "Obecność przekleństw",
+          "cover_file": "Okładka",
+          "audio_file": "Plik audio",
+          "lyrics_file": "Tekst utworu",
+          "short_video_file": "Wideo na spotify/tidal"
+        },
+        "placeholders": {
+          "author": "Wykonawca",
+          "title": "Tytuł",
+          "description": "Opis",
+          "producer": "Producent",
+          "producer_details": "Producent (imię i nazwisko)",
+          "lyrics_author": "Autorzy tekstu",
+          "label": "Wytwórnia",
+          "release_year": "2024",
+          "publication_date": "2024-09-21",
+          "tiktok_fragment": "Start fragmentu TikTok",
+          "cover_file": "Wgraj okładkę",
+          "audio_file": "Wgraj plik WAV",
+          "lyrics_file": "Wgraj plik txt/doc",
+          "short_video_file": "Wgraj plik wideo"
+        },
+        "helptext": {
+          "tiktok_fragment": "Wymagany format mm:ss (np. 0:22, 00:22)",
+          "comma_separated": "Jeśli jest więcej niż 1 to powinni być oddzieleni przecinkiem"
+        },
+        "descriptions": {
+          "cover_file": "3000X3000 PX"
+        }
+      },
+      "summary": {
+        "author": "Wykonawca/y",
+        "title": "Tytuł",
+        "producer": "Producent",
+        "lyrics_author": "Autor tekstu",
+        "description": "Opis",
+        "label": "Wytwórnia",
+        "release_year": "Rok wydania",
+        "publication_date": "Data publikacji",
+        "duration": "Długość utworu",
+        "tiktok_fragment": "Start fragmentu TikTok",
+        "swear_words": "Obecność przekleństw"
+      },
+      "processing": {
+        "waiting_for_verification": "Twoje zgłoszenie czeka na weryfikację przez administratora.",
+        "verification_time": "Weryfikacja może trwać do 48 godzin",
+        "whats_next": "Co dalej?",
+        "whats_next_content": "Skorzystaj z naszego planera i utwórz plan marketingowy dopasowany pod Spotify / Tidal",
+        "create_marketing_plan": "Utwórz plan marketingowy",
+        "see_catalog": "Zobacz katalog",
+        "tooltip": "Funkcja będzie dostępna niebawem"
+      },
+      "loader": {
+        "processing": "Twoje zgłoszenie jest przetwarzane",
+        "wait": "Poczekaj na potwierdzenie"
+      }
+    },
+    "drafts_listing": {
+      "title": "Zapisane formularze",
+      "saved_drafts": "Twoje zapisane formularze:",
+      "no_data": "Brak zapisanych formularzy"
+    },
+    "catalogue": {
+      "title": "Katalog",
+      "create_album": "Wydaj album",
+      "single_planning": "Zaplanuj premierę singla",
+      "type": {
+        "single": "Singiel",
+        "album": "Album"
+      },
+      "radio_select": {
+        "all": "Wszystkie",
+        "published": "Wydane",
+        "planned": "Zaplanowane"
+      },
+      "published_mobile": "Opublikowane",
+      "published_desktop": "Wydane",
+      "planned": "Zaplanowane",
+      "empty": "Na tę chwilę nie masz żadnego albumu w katalogu.",
+      "empty_published": "W tej chwili nie masz żadnych wydanych albumów",
+      "empty_planned": "W tej chwili nie masz żadnych zaplanowanych albumów"
+    },
+    "catalog_details": {
+      "actions": "Akcje",
+      "promo": "Podpromuj",
+      "order_merch": "Zamów merch",
+      "order_reissue": "Zamów wznowienie",
+      "countdown_label": "Do premiery zostało",
+      "create_marketing_plan": "utwórz plan promocyjny",
+      "create_marketing_plan_label": "To wydanie nie posiada stworzonego planu marketingowego.",
+      "about": {
+        "single": "O singlu",
+        "album": "O albumie"
+      }
+    }
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "distribution": "Dystrybucja",
+    "analytics": "Analityka",
+    "analytics_full": "Analityka i finanse",
+    "marketing": "Marketing",
+    "ecommerce": "E-commerce",
+    "booking": "Booking",
+    "education": "ADM Edukuje",
+    "claims": "Zgłoś roszczenie",
+    "contact": "Skontaktuj się"
+  },
+  "sidebar": {
+    "distribution": {
+      "release_album": "Wydaj album CD/vinyl",
+      "plan_premiere": "Zaplanuj premierę singla",
+      "catalog": "Katalog"
+    },
+    "analytics": {
+      "finance": "Finanse",
+      "marketing": "Marketing"
+    },
+    "education": {
+      "adm_blog": "ADM Blog",
+      "adm_e_learning": "ADM  E-Learning"
+    },
+    "marketing": {
+      "plans": "Plany marketingowe",
+      "planner": "Planer",
+      "paid_ads": "Zamów płatne reklamy",
+      "press_note": "Notka prasowa",
+      "send_single": "Wyślij singiel"
+    },
+    "ecommerce": {
+      "order_merch": "Zamów merch",
+      "report_preorder": "Zgłoś preorder",
+      "add_own_products": "Dodaj własne produkty",
+      "order_landing_page": "Zamów landing page",
+      "catalog": "Katalog"
+    }
+  },
+  "marketing": {
+    "title": "Marketing",
+    "buttons": {
+      "category_spotify_tidal": "Spotify / Tidal",
+      "category_social_media": "Social Media",
+      "category_pr": "PR",
+      "category_media": "Media",
+      "label_plans": "Plany marketingowe",
+      "label_planer": "Planer",
+      "label_order_paid_ads": "Zamów płatne reklamy",
+      "label_press_note": "Notka prasowa",
+      "label_send_single": "Wyślij singiel"
+    }
+  },
+  "ecommerce": {
+    "title": "E-commerce",
+    "buttons": {
+      "category_magazine": "Magazyn",
+      "category_shop": "Sklep",
+      "category_service": "Obsługa",
+      "category_your_magazine": "Twój magazyn",
+      "category_support": "Wsparcie",
+      "label_catalog": "Katalog",
+      "label_order_merch": "Zamów merch",
+      "label_report_preorder": "Zgłoś preorder",
+      "label_add_own_products": "Dodaj własne produkty",
+      "label_order_landing_page": "Zamów landing page"
+    }
+  },
+  "booking": {
+    "title": "Booking",
+    "buttons": {
+      "category_offer": "Oferta",
+      "category_concerts": "Koncerty",
+      "category_sales": "Sprzedaż",
+      "category_support": "Wsparcie",
+      "label_offer": "Oferta bookingowa",
+      "label_calendar": "Kalendarz",
+      "label_tixy": "Tixy",
+      "label_order_manager": "Zamów managera 360"
+    }
+  },
+  "hi": "Cześć",
+  "hi_name": "Cześć, {{ name }}",
+  "dashboard": {
+    "intro_empty": "W tym miejscu znajdziesz najnowsze dane dotyczące Twoich wydań, zadań i statystyk.",
+    "buttons": {
+      "release_album": "Wydaj album",
+      "link_accounts": "Połącz konta"
+    },
+    "tabs": {
+      "newest": "Najnowsze",
+      "statistics": "Statystyki",
+      "shortcuts": "Skróty"
+    },
+    "intro_no_statistics": "O nie, brakuje tu Twoich statystyk! Podepnij Twoje profile YouTube, Spotify, Google i social media w karcie użytkownika, aby mieć dostęp do pełnej analityki swojej kariery!"
+  },
+  "user": {
+    "details": {
+      "name_and_surname": "Imię i nazwisko",
+      "pseudonym": "Pseudonim",
+      "account_type": "Typ konta",
+      "email": "Adres e-mail",
+      "telephone": "Telefon",
+      "nip": "NIP"
+    },
+    "edit": {
+      "title": "Edycja profilu",
+      "success": "Dane użytkownika zostały zapisane",
+      "error": "Nie udało się zapisać danych użytkownika"
+    }
+  },
+  "buttons": {
+    "edit_data": "Edytuj dane"
+  },
+  "header": {
+    "calendar": "Kalendarz",
+    "news": "Wiadomości",
+    "business": "Moje sprawy",
+    "popover_menu": {
+      "my_profile": "Mój profil",
+      "logout": "Wyloguj mnie"
+    }
+  },
+  "language": "Język",
+  "profile": {
+    "title": "Profil",
+    "socials": {
+      "title": "Podłączone profile"
+    }
+  },
+  "languages": {
+    "pl-PL": "PL",
+    "en-EN": "EN"
+  },
+  "user_avatar": {
+    "edit": {
+      "success": "Awatar został zapisany",
+      "error": "Nie udało się zapisać awataru"
+    },
+    "delete": {
+      "success": "Awatar został usunięty"
+    }
+  },
+  "my_business": "Moje sprawy",
+  "notifications": "Powiadomienia",
+  "messages": "Wiadomości",
+  "file_claim": "Zgłoś roszczenie",
+  "education": "ADM Edukuje",
+  "adm_blog": "ADM Blog",
+  "adm_e_learning": "ADM  E-Learning",
+  "contact_us": "Skontaktuj się z nami",
+  "logout": "Logout",
+  "menu": "Menu",
+  "analytics": {
+    "title": "Analityka",
+    "marketing": "Marketing",
+    "finance": "Finanse",
+    "send-invoice": "Wyślij fakturę",
+    "conversion": "Konwersja",
+    "day": "Dzień",
+    "month": "Miesiąc",
+    "income": "Przychód",
+    "views": "Wyświetlenia",
+    "google_analytics_report": "WWW (dane z Google analytics)",
+    "report": {
+      "not_available": "Raport jest obecnie niedostępny",
+      "all-time": "Od zawsze",
+      "youtube": "YouTube",
+      "spotify": "Spotify",
+      "otherPlatforms": "Inne streamingi",
+      "concerts": "Koncerty",
+      "tixy": "Tixy",
+      "mediaSales": "Sprzedaż CD/Vinyl",
+      "merchSales": "Merch",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "instagramReels": "Instagram Reels",
+      "tiktok": "TikTok",
+      "overall": "Razem",
+      "googleAnalysticsUsers": "Ilość użytkowników",
+      "googleAnalysticsConversions": "Ilość konwersji",
+      "googleAnalysticsSessionDuration": "Długość sesji"
+    },
+    "date-range": {
+      "last-month": "Ten miesiąc",
+      "all-time": "Od zawsze"
+    },
+    "report-types": {
+      "finance": "Finanse",
+      "marketing": "Marketing"
+    }
+  },
+  "uploader": {
+    "in-queue": " Pliki w kolejce: {{ count }}",
+    "uploading": "Przesyłanie pliku:",
+    "progress": "{{ percent }}%",
+    "preparing": "Przygotowywanie..."
+  },
+  "calendar": {
+    "title": "Kalendarz",
+    "btn": {
+      "add": "Dodaj"
+    },
+    "tag": {
+      "sale": "Promocja",
+      "releases": "Wydania",
+      "concerts": "Koncerty",
+      "other": "Inne"
+    },
+    "weekday": {
+      "0": "Pon",
+      "1": "Wt",
+      "2": "Śr",
+      "3": "Czw",
+      "4": "Pt",
+      "5": "So",
+      "6": "Nd"
+    },
+    "month": {
+      "0": "Styczeń",
+      "1": "Luty",
+      "2": "Marzec",
+      "3": "Kwiecień",
+      "4": "Maj",
+      "5": "Czerwiec",
+      "6": "Lipiec",
+      "7": "Sierpień",
+      "8": "Wrzesień",
+      "9": "Październik",
+      "10": "Listopad",
+      "11": "Grudzień"
+    },
+    "placeholder": {
+      "input": "Wybierz datę"
+    }
+  },
+  "chat": {
+    "title": "Wiadomości",
+    "list": {
+      "new_chat": "Nowa wiadomość"
+    },
+    "placeholder": {
+      "input": "Napisz coś..."
+    },
+    "button": {
+      "send": "Wyślij"
+    },
+    "try_again": "Spróbuj ponownie"
+  },
+  "my_profile": "Mój profil",
+  "logout_profile": "Wyloguj mnie",
+  "loading": "Wczytywanie",
+  "pending_verification": {
+    "title": "Cześć {{userName}}",
+    "verification_in_progress": "Trwa weryfikacja Twojego konta.",
+    "verification_info": "Weryfikacja trwa do 48 godzin. Po jej zakończeniu dostaniesz informacje na podany adres e-mail."
+  },
+  "cl": {
+    "account": {
+      "login-success": "Zalogowano poprawnie",
+      "login-invalid-credentials": "Błędne hasło lub adres email",
+      "account_not_active": "Konto nie zostało aktywowane",
+      "eip_user_blocked_reason_all": "Konto zostało zablokowane. Skontaktuj się z administratorem",
+      "login-not-activated": "Konto nie zostało aktywowane",
+      "logout-success": "Wylogowano poprawnie",
+      "logout-error": "Błąd podczas wylogowywania",
+      "reset-password-request-success": "Email resetujący hasło został wysłany",
+      "reset-password-request-error": "Wystąpił błąd podczas przetwarzania zapytania",
+      "reset-password-invalid-hash-error": "Link wygasł lub jest nieprawidłowy",
+      "reset-password-success": "Hasło zostało zaktualizowane",
+      "reset-password-error": "Wystąpił błąd podczas przetwarzania zapytania",
+      "activate-success": "Konto zostało aktywowane",
+      "activate-error": "Wystąpił błąd podczas aktywacji konta",
+      "resend-activation-link-success": "Link aktywacyjny został wysłany",
+      "resend-activation-link-error": "Wystąpił błąd podczas przetwarzania zapytania"
+    }
+  }
+}
