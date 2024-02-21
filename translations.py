@@ -1,11 +1,16 @@
 import json
-filePL = open('pl-PL.json','r')
-dictPL = json.load(filePL)
-filePL.close()
+from os import system
 
-fileEN = open('en-EN.json','r')
-dictEN = json.load(fileEN)
-fileEN.close()
+
+def LoadFile(fileName):
+    with open(fileName,'r') as file:
+        temp=json.load(file)
+    return temp
+
+
+def SaveFile(fileName,jsonDict):
+    with open(fileName, "w") as file: 
+        json.dump(jsonDict, file, indent=4)
 
 
 def TagIncorrect(dic1,dic2):
@@ -50,13 +55,43 @@ def Sort(dic1,dic2):
         temp[x]=dic1[x]
     return temp
 
+
+def Menu():
+    system('clear')
+    print('1.Check file')
+    print('2.New file')
+    inp=input()
+    match(inp):
+        case '1':
+            CheckFile()
+        case '2':
+            NewFile()
+
+
+def CheckFile():
+    system('clear')
+    dictPL=LoadFile(input('"Pattern" file name (PL): '))
+    system('clear')
+    dictTr=LoadFile(input('Translations file name: '))  
+
+    dictTr=FindMissing(dictTr,dictPL)
+    dictTr=TagIncorrect(dictTr,dictPL)
+
+    dictTr=Sort(dictTr,dictPL)
+
+    system('clear')
+    SaveFile(input('Name of saved file: '),dictTr)
+
+
+def NewFile():
+    system('clear')
+    dictPL=LoadFile(input('"Pattern" file name (PL): '))
+    dictPL=ReplaceValue(dictPL)
     
-
-dictEN=FindMissing(dictEN,dictPL)
-dictEN=TagIncorrect(dictEN,dictPL)
-
-res=Sort(dictEN,dictPL)
+    system('clear')
+    SaveFile(input('Name of saved file: '),dictPL)
 
 
-with open("test.json", "w") as outfile: 
-    json.dump(res, outfile, indent=4)
+
+
+Menu()
