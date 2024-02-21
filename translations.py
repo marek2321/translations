@@ -10,7 +10,7 @@ def LoadFile(fileName):
 
 def SaveFile(fileName,jsonDict):
     with open(fileName, "w") as file: 
-        json.dump(jsonDict, file, indent=4)
+        json.dump(jsonDict, file, indent=4, ensure_ascii=False)
 
 
 def SaveIncorrect(dic1,dic2):
