@@ -25,6 +25,8 @@ def FindMissing(dic1,dic2):
             if x in dic1.keys():
                 if isinstance(dic2[x],dict):
                     dic1[x]=FindMissing(dic1[x],dic2[x])
+                elif isinstance(dic1[x],dict) and isinstance(dic2[x],str):
+                    dic1[x]=dic2[x]
             else:
                 dic1[x]=dic2[x]
         else:
@@ -50,8 +52,8 @@ def Sort(dic1,dic2):
 
     
 
-dictEN=TagIncorrect(dictEN,dictPL)
 dictEN=FindMissing(dictEN,dictPL)
+dictEN=TagIncorrect(dictEN,dictPL)
 
 res=Sort(dictEN,dictPL)
 
