@@ -215,10 +215,5 @@
   },
   "my_profile": "My profile",
   "logout_profile": "Logout",
-  "loading": "Loading",
-  "cl": {
-    "account": {
-        "login-success": "TODO"
-    }
-  }
+  "loading": "Loading"
 }

@@ -1,5 +1,4 @@
 import json
-from os import system
 filePL = open('pl-PL.json','r')
 dictPL = json.load(filePL)
 filePL.close()
@@ -7,6 +6,16 @@ filePL.close()
 fileEN = open('en-EN.json','r')
 dictEN = json.load(fileEN)
 fileEN.close()
+
+
+def TagIncorrect(dic1,dic2):
+    for x in dic1.keys():
+        if x not in dic2.keys() or type(dic1[x]) is not type(dic2[x]):
+            dic1[x]='REMOVETHIS'
+        else:
+            if isinstance(dic1[x],dict):
+                dic1[x]=TagIncorrect(dic1[x],dic2[x])
+    return dic1
 
 
 def FindMissing(dic1,dic2):
@@ -33,9 +42,19 @@ def ReplaceValue(dic):
     return dic
         
 
-tet=FindMissing(dictEN,dictPL)
+def Sort(dic1,dic2):
+    temp={}
+    for x in dic2.keys():
+        temp[x]=dic1[x]
+    return temp
+
+    
+
+dictEN=TagIncorrect(dictEN,dictPL)
+dictEN=FindMissing(dictEN,dictPL)
+
+res=Sort(dictEN,dictPL)
 
 
 with open("test.json", "w") as outfile: 
-    json.dump(tet, outfile, indent=4)
-
+    json.dump(res, outfile, indent=4)
