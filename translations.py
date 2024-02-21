@@ -13,14 +13,15 @@ def SaveFile(fileName,jsonDict):
         json.dump(jsonDict, file, indent=4)
 
 
-def TagIncorrect(dic1,dic2):
+def SaveIncorrect(dic1,dic2):
+    removed={}
     for x in dic1.keys():
-        if x not in dic2.keys() or type(dic1[x]) is not type(dic2[x]):
-            dic1[x]='REMOVETHIS'
-        else:
-            if isinstance(dic1[x],dict):
-                dic1[x]=TagIncorrect(dic1[x],dic2[x])
-    return dic1
+        if x not in dic2.keys():
+            removed[x]=dic1[x]
+        elif isinstance(dic1[x],dict):
+            if len(SaveIncorrect(dic1[x],dic2[x]))>0:
+                removed[x]=SaveIncorrect(dic1[x],dic2[x])
+    return removed
 
 
 def FindMissing(dic1,dic2):
@@ -52,6 +53,8 @@ def ReplaceValue(dic):
 def Sort(dic1,dic2):
     temp={}
     for x in dic2.keys():
+        if isinstance(dic2[x],dict):
+            dic1[x]=Sort(dic1[x],dic2[x])
         temp[x]=dic1[x]
     return temp
 
@@ -63,7 +66,8 @@ def Menu():
     inp=input()
     match(inp):
         case '1':
-            CheckFile()
+            removed=CheckFile()
+            return removed
         case '2':
             NewFile()
 
@@ -75,12 +79,13 @@ def CheckFile():
     dictTr=LoadFile(input('Translations file name: '))  
 
     dictTr=FindMissing(dictTr,dictPL)
-    dictTr=TagIncorrect(dictTr,dictPL)
+    removed=SaveIncorrect(dictTr,dictPL)
 
     dictTr=Sort(dictTr,dictPL)
 
     system('clear')
     SaveFile(input('Name of saved file: '),dictTr)
+    return removed
 
 
 def NewFile():
@@ -90,7 +95,6 @@ def NewFile():
     
     system('clear')
     SaveFile(input('Name of saved file: '),dictPL)
-    system('clear')
 
 
-Menu()
+SaveFile('removed.json',Menu())

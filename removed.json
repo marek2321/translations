@@ -1,0 +1,64 @@
+{
+    "auth": {
+        "labels": {
+            "account-type": "Account type"
+        },
+        "create-account": "Create an account",
+        "register-helptext": "You dont have an account yet?",
+        "sign-in-helptext": "Already have an account?",
+        "sign-in": "Log in",
+        "remind-password": "Remind password"
+    },
+    "profile-setup": {
+        "welcome": {
+            "text1": "To fully use the ADM function, we need to verify your account. For us to do this, you must complete your profile.",
+            "text2": "You can do this later when you become familiar with our capabilities.",
+            "text3": "The decision is yours :)"
+        },
+        "complete-setup": "I'm completing",
+        "complete-profile": "Complete your profile",
+        "welcome-msg": "Welcome in ADM",
+        "form": {
+            "title": "Your data",
+            "upload-image": "Upload a photo",
+            "upload-info": "Photos in JPG, PNG format in 1:1 ratio",
+            "labels": {
+                "avatar": "Avatar",
+                "first-name": "First name",
+                "last-name": "Last name",
+                "pseudonym": "Nickname",
+                "phone-number": "Phone number",
+                "nip": "Nip"
+            },
+            "placeholders": {
+                "first-name": "Enter first name",
+                "last-name": "Enter last name",
+                "pseudonym": "Enter nickname",
+                "phone-number": "Enter phone number",
+                "nip": "Enter NIP"
+            }
+        },
+        "socials": {
+            "title": "Social Media"
+        }
+    },
+    "account-type": {
+        "artist": "Artist",
+        "manager": "Manager"
+    },
+    "forms": {
+        "error": {
+            "message": {
+                "date-range": "The date range is invalid",
+                "postal-code": "Invalid postal code"
+            }
+        }
+    },
+    "navigation": {
+        "e-commerce": "E-commerce"
+    },
+    "languages": {
+        "pl": "PL",
+        "en": "EN"
+    }
+}
