@@ -90,6 +90,7 @@ def NewFile():
     
     system('clear')
     SaveFile(input('Name of saved file: '),dictPL)
+    system('clear')
 
 
 Menu()
