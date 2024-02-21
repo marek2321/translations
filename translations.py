@@ -92,6 +92,4 @@ def NewFile():
     SaveFile(input('Name of saved file: '),dictPL)
 
 
-
-
 Menu()
